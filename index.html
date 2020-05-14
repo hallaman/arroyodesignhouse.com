@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="assets/images/arroyo_favicon_16x16.png" />
+
+
+    <link type="text/css" rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/nav.css" />
+
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
+ 
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
+
+    <title>ARROYO // DESIGN HOUSE</title>
+    <meta name="description" content="Arroyo Design House, based in Boise, ID. Husband and wife team. He's a Southern man, she's a Western girl. Together they build things and make stuff." />
+    
+
+  </head>
+
+  <body class="home">
+
+    <div id="navigation-holder"></div>
+
+    <div id="owl" class="owl-carousel owl-theme">
+      <div class="item slide-0"><img src="assets/images/slide_0.jpg"></div>
+      <div class="item slide-1"><img src="assets/images/slide_1.jpg"></div>
+      <div class="item slide-2"><img src="assets/images/slide_2.jpg"></div>
+      <div class="item slide-3"><img src="assets/images/slide_3.jpg"></div>
+      <div class="item slide-4"><img src="assets/images/slide_4.jpg"></div>
+      <div class="item slide-5"><img src="assets/images/slide_5.jpg"></div>
+      <div class="item slide-6"><img src="assets/images/slide_6.jpg"></div>
+      <div class="item slide-7"><img src="assets/images/slide_7.jpg"></div>
+      <div class="item slide-8"><img src="assets/images/slide_8.png"></div>
+<!--       <div class="item slide-9"><img src="assets/images/slide_9.png"></div>
+ -->
+    </div>
+
+    <div id="info">
+      <div id="controls">
+        <div class="next">&nbsp;</div>
+        <div class="oval">
+          <div class="diamond">
+            <div class="diamond inner-diamond"></div>
+          </div>
+        </div>
+        <div class="prev">&nbsp;</div>
+      </div>
+      <h3><a href="https://instagram.com/arroyodesignhouse/" target="_blank">instagram</a></h3>
+      <h3><a href="https://www.facebook.com/Arroyo-Design-House-1624271144527080" target="_blank">facebook</a></h3>
+      <h3><a href="https://www.etsy.com/shop/ARROYODESIGNHOUSE" target="_blank">etsy</a></h3>
+
+      <hr />
+      <h4>contact</h4>
+      <a class="email" href="mailto:hello@arroyodesignhouse.com">hello@arroyodesignhouse.com</a>
+
+      <h4>for custom orders</h4>
+      <h4>and pricing information</h4>
+    </div>
+
+    <!--  jQuery 1.7+  -->
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+
+    <!-- Include js plugin -->
+    <script src="assets/owl-carousel/owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/arroyo.js"></script>
+
+    <script type="text/javascript">
+      // Owl Carousel
+
+      $(document).ready(function() {
+ 
+        $("#owl").owlCarousel({
+       
+            navigation : false, 
+            pagination: false,
+            slideSpeed : 400,
+            singleItem: true,
+            autoHeight: true,
+            autoPlay: true,
+
+        });
+
+        var owl = $("#owl");
+ 
+        owl.owlCarousel();
+
+        // Custom Navigation Events
+        $(".next").click(function(){
+          owl.trigger('owl.next');
+        });
+        $(".next").hover(
+          function(){
+            $(".next").addClass('next-hover');
+          }, function() {
+            $(".next").removeClass('next-hover');
+          }
+        );
+        $(".prev").click(function(){
+          owl.trigger('owl.prev');
+        });
+        $(".prev").hover(
+          function(){
+            $(".prev").addClass('prev-hover');
+          }, function() {
+            $(".prev").removeClass('prev-hover');
+          }
+        );
+       
+      });
+
+    </script>
+
+  </body>
+</html>

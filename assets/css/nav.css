@@ -1,0 +1,83 @@
+.navbar-brand #logo {
+  max-width: 150px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-bottom: none;
+  margin: 0 20px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000000;
+  padding: 0 3em;
+}
+
+.navbar .navbar-collapse {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.home .navbar .navbar-collapse {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+
+  .navbar-brand,
+  .navbar-nav li a {
+    line-height: 150px;
+    height: 150px;
+    padding-top: 0;
+
+    letter-spacing: 1.5px;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    font-size: 1.25em;
+  }
+
+  .navbar-right{
+    padding-right: 10px;
+  }
+
+  .navbar-brand #logo {
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .navbar-brand {
+    overflow: hidden;
+    height: auto;
+  }
+
+  .navbar-brand #logo {
+    padding: 0;
+  }
+ 
+}
+
+@media (max-width: 414px) {
+
+
+
+  #navigation-holder {
+    padding: 1em 0;
+  }
+
+  .navbar-default {
+    position: relative;
+  }
+
+ .navbar-brand #logo {
+    max-width: 80px !important;
+    padding: 0;
+    margin: 0 !important;
+  }
+
+
+
+}
