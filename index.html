@@ -14,13 +14,14 @@
 
     <!-- Important Owl stylesheet -->
     <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
- 
+
     <!-- Default Theme -->
     <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
 
     <title>ARROYO // DESIGN HOUSE</title>
     <meta name="description" content="Arroyo Design House, based in Boise, ID. Husband and wife team. He's a Southern man, she's a Western girl. Together they build things and make stuff." />
-    
+    <meta property="og:image" content="http://www.arroyodesignhouse.com/images/arroyo_logo.png">
+
 
   </head>
 
@@ -78,10 +79,10 @@
       // Owl Carousel
 
       $(document).ready(function() {
- 
+
         $("#owl").owlCarousel({
-       
-            navigation : false, 
+
+            navigation : false,
             pagination: false,
             slideSpeed : 400,
             singleItem: true,
@@ -91,7 +92,7 @@
         });
 
         var owl = $("#owl");
- 
+
         owl.owlCarousel();
 
         // Custom Navigation Events
@@ -115,7 +116,7 @@
             $(".prev").removeClass('prev-hover');
           }
         );
-       
+
       });
 
     </script>
